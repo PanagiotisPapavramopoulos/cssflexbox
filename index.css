@@ -1,0 +1,69 @@
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    /* height: 100%; */
+    
+/**************** FLEX-DIRECTION ****************/
+    /* flex-direction: row; DEFAULT */
+    /* flex-direction: row or column; */
+
+
+/**************** JUSTIFY-CONTENT ****************/
+    /* justify-content: flex-start; DEFAULT*/
+    /* justify-content: flex-start or flex-end or center 
+    or space-around or space-between or space-evenly; */
+
+
+/**************** ALIGN-ITEMS ****************/
+    /* align-items: center; DEFAULT  */
+    /*  align-items: flex-start or flex-end or center; 
+    must have height property */
+
+/**************** FLEX-WRAP ****************/
+    /* flex-wrap: nowrap; DEFAULT*/
+    /* flex-wrap: wrap or wrap-reverse or nowrap; */
+}
+
+.container > div {
+/**************** FLEX-GROW-SHRINK-BASIS ****************/
+    /* flex: 0 1 auto; DEFAULT */
+     /* This 2 are the same
+     flex: 1 1 200px;  
+     flex-grow: 1; flex-shrink: 1; flex-basis: 200px; 
+     
+     flex-grow => Οριζει ποσο απο τον κενο χωρο που υπαρχει απο
+     το parrent element θα παρει. ΠΑΡΑΔΕΙΓΜΑ - Αν εχουμε 3 element 
+     και "πιανουν" 100px χωρο το καθενα και το parrent element ειναι 600px
+     και ορισουμε το flex-grow: 1; τοτε το καθε 1 απο τα 3 element θα παει
+     να παρει ισοποσα τον περισευουμενο χωρο (600-(3*100))=300px, θα παρει
+     δηλαδη 300/3=100px το καθε ενα. Αυτο το ποσο ειναι Responsive.
+
+     flex-shrink => Οριζει ποσο θα μαζευτει ενα element αν μικρινουμε το 
+     parrent element. ΠΑΡΑΔΕΙΓΜΑ - Αν εχουμε 3 element 
+     και "πιανουν" 100px χωρο το καθενα και το parrent element ειναι 240px
+     και ορισουμε το flex-shrink: 1; τοτε το καθε 1 απο τα 3 element θα 
+     παει να μειωσει ισοποσα τον χωρο που χρειαζετε δηλαδη 240/3=80px το 
+     καθε ενα. Αυτο το ποσο ειναι Responsive.
+
+     flex-basis => Οριζει τον χωρο που καταλαμβανει ενα element μεσα στο 
+     parrent element. Παραδειγμα - Αν εχουμε 3 element και "πιανουν" 
+     συμφωνα με το content τους 100px χωρο το καθενα και το parrent 
+     element ειναι 500px, οριζοντας το flex-basis: 150; τοτε το καθε 1 απο
+     τα 3 element θα παει να γινει 150px, συνολικα 450px. Αυτο το ποσο 
+     ειναι Responsive.
+     */
+}
+
+.home {
+    
+/**************** ALIGN-SELF ****************/
+    /* align-self: auto; DEFAULT inherits from parrent*/
+    /* align-self: center or flex-start or flex-end or stretch or auto; */
+
+/**************** ORDER ****************/
+    /* order: 0; DEFAULT*/
+    /* order: -15 or -1 or 0 or 1 or 24; Οριζει την σειρα που φαινονται τα
+    elements. O μικροτερος αριθμος θα φαινεται πρωτος και ο μεγαλυτερος 
+    τελευταιος. Με αυτο τον τροπο μπορουμε να αλλαξουμε την σειρα στα
+    html elements χωρις να πειραξουμε το αρχειο html. */
+}
